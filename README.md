@@ -83,3 +83,19 @@ Sieve Slit Runs
 
   21365 .... Right .... -3.2 ... -0.5
 
+
+Notes on the work flow -- example on ifarm
+
+   git clone https://rwmichaels@github.com/rwmichaels/TrkHoles.git
+
+   delete contents of rootfiles, make links.
+
+   rootfiles -> /w/halla-scifs17exp/parity/disk1/bob/trkcorr_rootfiles
+
+   AfileL.root or AfileR.root is a link
+   AfileR.root -> ./rootfiles/prexRHRS_21364_siyu.root
+
+   holes.dat is a link
+   holes.dat -> ./holefiles/holes21364.dat
+
+   root .x TrkHoles.C
